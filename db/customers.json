@@ -1,0 +1,67 @@
+[
+  {
+    "id": "b91e42d3-2e3f-4f09-b76e-1a54147c895f",
+    "name": "Bob Williams",
+    "age": 32,
+    "address": {
+      "no": "789",
+      "street": "Pine St",
+      "city": "Villageton",
+      "pincode": 56789
+    },
+    "customer_type": "REGULAR",
+    "loyalty_points": 300
+  },
+  {
+    "id": "c78529a1-8d20-4d9a-9314-fa6725873b2a",
+    "name": "Catherine Davis",
+    "age": 24,
+    "address": {
+      "no": "234",
+      "street": "Maple Rd",
+      "city": "Suburbia",
+      "pincode": 87654
+    },
+    "customer_type": "PREMIUM",
+    "loyalty_points": 600
+  },
+  {
+    "id": "e1497af6-d4c0-4cda-8f92-587f13ac421d",
+    "name": "Edward Smith",
+    "age": 29,
+    "address": {
+      "no": "567",
+      "street": "Oak Ln",
+      "city": "Townville",
+      "pincode": 34567
+    },
+    "customer_type": "REGULAR",
+    "loyalty_points": 200
+  },
+  {
+    "id": "f3db6f89-6959-4c2b-9302-4f38c6f2e5b0",
+    "name": "Fiona Brown",
+    "age": 36,
+    "address": {
+      "no": "901",
+      "street": "Cedar Ave",
+      "city": "Villageside",
+      "pincode": 10987
+    },
+    "customer_type": "PREMIUM",
+    "loyalty_points": 700
+  },
+  {
+    "id": "g2a1e68d-9bfc-45ef-87a5-bd849dc1e4b7",
+    "name": "George Turner",
+    "age": 31,
+    "address": {
+      "no": "123",
+      "street": "Birch Blvd",
+      "city": "Cityscape",
+      "pincode": 45678
+    },
+    "customer_type": "REGULAR",
+    "loyalty_points": 250
+  }
+]

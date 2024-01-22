@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+service CustomerService {
+    rpc GetAll (Empty) returns (CustomerList) {}
+    rpc Get (CustomerRequestId) returns (Customer) {}
+    rpc Insert (Customer) returns (Customer) {}
+    rpc Update (Customer) returns (Customer) {}
+    rpc Remove (CustomerRequestId) returns (Empty) {}
+}
+
+message Empty {}
+message Address {
+    string no = 1;
+    string street = 2;
+    string city = 3;
+    int32 pincode = 4;
+}
+
+enum CustomerType {
+    REGULAR = 0;
+    PREMIUM = 1;
+}
+message Customer {
+    string id = 1;
+    string name = 2;
+    int32 age = 3;
+    Address address = 4;
+    CustomerType customer_type = 5 [default = REGULAR];
+
+
+    extensions  1000 to 1999;
+}
+
+extend Customer {
+    int32 loyalty_points = 1000 [json_name = "loyalty_points"];
+    
+} 
+
+message CustomerList {
+    repeated Customer customers = 1;
+}
+
+message CustomerRequestId {
+    string id = 1;
+}
+
